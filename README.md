@@ -1,5 +1,5 @@
 # DOT-Projeto
 
--Em Andamento ...
+- Em Andamento ...
 
 - URL = https://vitor-henriqueas.github.io/DOT-Projeto/
