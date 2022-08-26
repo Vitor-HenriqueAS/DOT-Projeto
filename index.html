@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="assets/images/favicon-16x16.png" type="image/x-icon">
+	<title>DOT FILMS</title>
+	<link rel="stylesheet" href="assets/dist/style.css">
+
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" onclick="homePage()" class="logo">
+				<img class="logo__img" src="assets/images/favicon-16x16.png" alt="Logo Icon">
+				<h1 class="logo__txt">DOT FILMS</h1>
+			</a>
+
+			<div class="search" id="form">
+				<input id="search-txt" class="search__txt" type="text" placeholder="pesquise">
+				<button id="search-btn" class="search__btn" type="button">
+					<img src="assets/images/lupa.png" alt="search Icon">
+				</button>
+			</div>
+
+			<div class="btn-actions">
+				<img id="btn-favorite-js" class="btn-actions__heart" src="assets/images/coracao-w.png" title="Meus Favoritos" alt="Heart Icon">
+				<img id="btn-cart-js" class="btn-actions__cart" src="assets/images/carrinho.png" title="Meu Carrinho" alt="Shopping Cart Icon">
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+
+		<div class="container-movies" id="container_movies">
+			<div class="card">
+				<figure class="card__img">
+					<img class="img-movie" src="assets/images/icone-semImg.jpg" alt="Mountain Icon" height="327">
+					<img class="favorite" src="assets/images/coracao-b.png" alt="Heart Icon">
+					<figcaption class="date">7 de Janeiro 2019</figcaption>
+				</figure>
+
+				<div class="card__text">
+					<h1 class="title">Nome do Filme</h1>
+					<p class="details">
+						<img src="assets/images/estrela.png" alt="Star Icon">
+						7 Gênero
+					</p>
+					<p class="price">R$ 79,99</p>
+					<button type="button" class="btn-add">Adicionar</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="my-favorites header-ct">
+			<img src="assets/images/coracao-r.png" alt="Favorite Icon">
+			<h3 class="title">Adicionados Favoritos</h3>
+
+			<ul id="add-favorites-js"></ul>
+		</div>
+
+		<div class="my-cart header-ct">
+			<img src="assets/images/carrinho-cheio.png" alt="Cart Icon">
+			<h3 class="title">Adicionados no Carrinho</h3>
+
+			<div id="add-movies-js"></div>
+
+			<button type="button" onclick="btn_payment()" class="buy">Comprar</button>
+		</div>
+
+		<div class="finaliza-compra">
+			<div class="form">
+				<h1>Finalizar Compra</h1>
+
+				<input type="text" class="name" placeholder="Nome Completo" maxlength="60">
+
+				<div class="juntos">
+				<input type="number" class="cpf" placeholder="CPF">
+				<input type="number" class="phone" placeholder="Celular">
+				</div>
+
+				<input type="email" class="email" placeholder="E-mail">
+
+				<div class="juntos">
+				<input type="text" class="city" placeholder="Cidade">
+				<input type="text" class="state" placeholder="Estado">
+				</div>
+			</div>
+
+			<div class="description">
+
+				<table border="1">
+					<thead>
+						<tr>
+							<th class="center">Imagem</th>
+							<th class="center">Nome</th>
+							<th class="center">Preço</th>
+						</tr>
+					</thead>
+
+					<tbody id="table_body"></tbody>
+
+					<tfoot id="table_footer"></tfoot>
+				</table>
+			<button>Finalizar</button>
+			</div>
+		</div>
+
+	</main>
+
+	<script src="assets/js/header.js" defer></script>
+	<script src="assets/js/movies.js"></script>
+</body>
+</html>

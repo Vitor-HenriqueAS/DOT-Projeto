@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+main {
+	position: relative;
+	min-height: 100vh;
+
+	.container-movies {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.no-results{
+			color:#000;
+		}
+		// POSTERS DE FILMES
+		.card {
+			border: 1px solid #DFE6ED;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			width: 220px;
+			margin: 0 50px;
+			margin-bottom: 30px;
+			overflow: hidden;
+			position: relative;
+
+			&__img{
+				position: relative;
+				overflow: hidden;
+
+				.img-movie {
+					width: 100%;
+				}
+
+				.favorite {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 25px;
+					margin: 10px;
+					padding: 5px;
+					background-color: #fff;
+					border-radius: 50%;
+					transition: .3s ease-in-out;
+
+					&:hover {
+						background-color: #ec4444;
+						cursor: pointer;
+					}
+				}
+
+				.date {
+					background-color: hsla(0, 0%, 0%,50%);
+					color: #d4d4d4;
+					position: absolute;
+					width: 100%;
+					bottom: 2%;
+				}
+			}
+
+			&__text {
+				padding-top: 10px;
+				width: 100%;
+				text-align: center;
+
+				.title {
+					font-size: 1.2rem;
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+
+				.details {
+					padding: 0 20px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					color: #4B5C6B;
+
+					.genres{
+						overflow: auto;
+						font-size: 12px;
+					}
+
+					.green,.orange,.red {
+						font-size: 1rem;
+						display: block;
+					}
+					.green { color: green;}
+					.orange{ color: orange;}
+					.red { color: red;}
+				}
+
+				.price {
+					color: #4B5C6B;
+					font-size: 12px;
+					margin: 10px 0;
+				}
+
+				img {
+					width: 16px;
+				}
+
+				.btn-add {
+					background-color: #6558F5;
+					color: #fff;
+					width: 100%;
+					padding: 10px;
+					border: 1px solid transparent;
+					border-radius: 3px;
+
+					font-size: 1.2rem;
+					font-weight: 500;
+					transition: .5s ease-in-out;
+
+					&:hover {
+						border: 1px solid #6558F5;
+						background-color: transparent;
+						color: #6558F5;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.finaliza-compra {
+		margin: 50px;
+		display: none;
+		justify-content: space-around;
+
+		.form {
+			width: 600px;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+
+
+			h1 {
+				padding: 30px;
+			}
+
+			input {
+				margin: 5px;
+				padding: 10px;
+				background-color: transparent;
+				color: #d4d4d4;
+				border: 2px solid #d4d4d4;
+				border-radius: 5px;
+				font-size: 1rem;
+			}
+
+			.juntos {
+				display: flex;
+				input {
+					width: 50%;
+				}
+			}
+		}
+
+		.description {
+			width: 600px;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+			table {
+				width: 100%;
+				border: none;
+				font-size: 1rem;
+
+				td, th {
+					padding: 15px;
+				}
+
+				.img-movie-cart {
+					width: 100%;
+					height: 200px;
+					border-radius: 10px;
+				}
+
+				.price-payment {
+					font-size: 1.5rem;
+				}
+
+				.center{
+					text-align: center;
+				}
+
+				.left {
+					text-align: start;
+				}
+				.right {
+					text-align: end;
+				}
+			}
+
+			button {
+				width: 100%;
+				background-color: blue;
+				color: #fff;
+				border: none;
+				border-radius: 8px;
+				padding: 10px;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
