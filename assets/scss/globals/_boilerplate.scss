@@ -129,6 +129,39 @@ main {
 		}
 	}
 
+	.pagination{
+    display:flex;
+    margin:50px 30px;
+    align-items: center;
+    justify-content: center;
+    color:#171616;
+		user-select: none;
+
+		.page {
+			padding:20px;
+			cursor:pointer;
+			transition: 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.2);
+				color: #6558F5;
+			}
+		}
+
+		.page.disabled {
+				cursor:not-allowed;
+				color:#808080;
+		}
+
+		.current {
+				padding: 10px 20px;
+				border-radius: 50%;
+				border: 5px solid #6558F5;
+				font-size: 20px;
+				font-weight: 700;
+		}
+	}
+
 	.finaliza-compra {
 		margin: 50px;
 		display: none;

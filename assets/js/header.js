@@ -61,7 +61,18 @@ function addMovies(title, price){
 		<p class="movie-price-cart">R$ ${price}</p>
 	`
 	cartList.appendChild(cartMovieEl);
+	totalMyCart()
 }
+
+function totalMyCart() {
+	for (let i = 0; i < listCartMovieEl.length; i++){
+
+		let num = listCartPriceEl[i].replace(",", ".")
+		result += Number(num);
+	}
+	document.getElementById('total-my-cart-js').innerHTML = `R$ ${result.toFixed(2)}`
+}
+
 
 let listFavoriteMovieEl = []
 
@@ -134,7 +145,6 @@ function btn_payment () {
 
 		container_movies.style.display = "none";
 		payment.style.display = "flex";
-
 	}
 }
 

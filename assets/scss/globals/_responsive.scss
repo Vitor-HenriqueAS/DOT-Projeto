@@ -1,9 +1,9 @@
+
+
 @media only screen and (max-width: 780px) {
 
 	nav {
-
 		.logo {
-
 			gap: 8px;
 
 			&__img {
@@ -16,7 +16,6 @@
 		}
 
 		.search {
-
 			&__txt {
 				max-width: 150px;
 				font-size: 1rem;
@@ -28,7 +27,6 @@
 		}
 
 		.btn-actions {
-
 			&__heart, &__cart {
 				width: 25px;
 			}
@@ -39,16 +37,13 @@
 @media only screen and (max-width: 500px) {
 
 	nav {
-
 		.logo {
-
 			&__txt {
 			display: none;
 			}
 		}
 
 		.search {
-
 			&__txt {
 				max-width: 80px;
 			}

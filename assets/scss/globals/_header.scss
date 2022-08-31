@@ -72,23 +72,38 @@ header {
 // ICONES DE AÇÃO DO HEADER
 
 .header-ct {
+	min-height: 100vh;
 	background-color: #fff;
 	border: 1px solid #000;
-	border-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 	width: 400px;
 	padding: 20px;
 
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .my-favorites, .my-cart {
 	position: absolute;
 	display: none;
+	right: -1px;
+	top: 0;
 
 	h3 {
 		margin-left: 20px;
+	}
+
+	.total-my-cart{
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-top: 30px;
+
+		span {
+			margin-left: 20px;
+			font-size: 20px;
+		}
 	}
 
 	button {
@@ -112,16 +127,4 @@ header {
 	.movie {
 		margin-top: 10px;
 	}
-}
-
-// ICONE DE FAVORITOS
-.my-favorites {
-	top: -2%;
-	right: 5%;
-}
-
-// ICONE DE CARRINHO
-.my-cart {
-	top: -2%;
-	right: 1%;
 }
