@@ -3,6 +3,8 @@ const myCart = document.getElementById('btn-cart-js')
 const addFavorite = document.querySelector('.my-favorites')
 const addCart = document.querySelector('.my-cart')
 
+const pagination = document.getElementById('pagination');
+
 myFavorite.addEventListener('click', _ => {
 
 	let displayF = addFavorite.style.display
@@ -143,8 +145,8 @@ function btn_payment () {
 			</tr>
 			`
 		table_footer.appendChild(totalProduct);
-
 		container_movies.style.display = "none";
+		pagination.style.display = "none";
 		payment.style.display = "flex";
 	}
 }
