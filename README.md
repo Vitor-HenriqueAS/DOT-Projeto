@@ -1,4 +1,5 @@
 # DOT-Projeto
-avaliação técnica.
+
+- Em Andamento ...
 
 - URL = https://vitor-henriqueas.github.io/DOT-Projeto/
