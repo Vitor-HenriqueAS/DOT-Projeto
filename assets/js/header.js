@@ -130,6 +130,7 @@ function btn_payment () {
 			`
 			table_body.appendChild(productEl)
 
+			result = 0
 			let num = listCartPriceEl[i].replace(",", ".")
 			result += Number(num);
 		}
